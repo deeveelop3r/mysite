@@ -22,6 +22,8 @@ Route::controller(PortfolioController::class)->group(function () {
     Route::get('/projects/{project}', 'show')->name('portfolio.show');
     Route::get('/contact', 'contact')->name('portfolio.contact');
     Route::post('/contact', 'storeContact')->name('portfolio.store-contact');
+    Route::get('/skills', 'skills')->name('portfolio.skills');
+    Route::get('/api-docs', 'apiDocs')->name('portfolio.api-docs');
 });
 
 // Admin Routes

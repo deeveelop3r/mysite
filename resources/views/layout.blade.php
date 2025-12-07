@@ -473,6 +473,16 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('portfolio.skills') }}">
+                            <i class="fas fa-code me-1"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('portfolio.api-docs') }}">
+                            <i class="fas fa-book me-1"></i>API
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ route('portfolio.contact') }}">
                             <i class="fas fa-envelope me-1"></i>Contact
                         </a>

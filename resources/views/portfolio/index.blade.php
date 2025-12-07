@@ -5,9 +5,9 @@
 @section('content')
 <header class="hero">
     <div class="container hero-content">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I'm a passionate developer creating amazing digital experiences</p>
-        <a href="{{ route('portfolio.projects') }}" class="btn btn-light btn-lg mt-4">
+        <h1 style="animation: fadeInUp 1s ease-out;">Welcome to My Portfolio</h1>
+        <p style="animation: fadeInUp 1.2s ease-out;">I'm a passionate developer creating amazing digital experiences</p>
+        <a href="{{ route('portfolio.projects') }}" class="btn btn-light btn-lg mt-4" style="animation: fadeInUp 1.4s ease-out;">
             <i class="fas fa-arrow-right me-2"></i>View My Work
         </a>
     </div>
@@ -16,33 +16,39 @@
 <section id="about" class="py-5">
     <div class="container">
         <h2 class="mb-2">About Me</h2>
-        <p class="section-subtitle">Hi, I'm [Your Name], a passionate developer with expertise in [Your Skills]. I love building beautiful and functional websites that make a difference.</p>
+        <p class="section-subtitle">Full-stack developer with 5+ years of experience building robust, scalable web applications. Specialized in Laravel, Vue.js, and modern cloud deployment. Passionate about clean code and user-centered design.</p>
         
         <div class="row g-4">
             <div class="col-md-4">
-                <div class="card border-0">
-                    <div class="card-body text-center">
-                        <i class="fas fa-paint-brush" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                        <h5 class="card-title">Web Design</h5>
-                        <p class="card-text">Creating stunning, user-friendly designs that engage visitors and deliver exceptional experiences.</p>
+                <div class="card">
+                    <div class="card-body text-center" style="padding: 2rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; animation: slideInLeft 0.6s ease-out;">
+                            <i class="fas fa-paint-brush" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                        </div>
+                        <h5 class="card-title">Frontend Design</h5>
+                        <p class="card-text">Crafting pixel-perfect, responsive interfaces with modern UI frameworks like Bootstrap, Tailwind, and Vue.js.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card border-0">
-                    <div class="card-body text-center">
-                        <i class="fas fa-code" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                        <h5 class="card-title">Development</h5>
-                        <p class="card-text">Building robust and scalable applications with clean code and best practices.</p>
+                <div class="card">
+                    <div class="card-body text-center" style="padding: 2rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; animation: slideInLeft 0.8s ease-out;">
+                            <i class="fas fa-code" style="background: linear-gradient(135deg, var(--secondary-color), var(--accent-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                        </div>
+                        <h5 class="card-title">Backend Development</h5>
+                        <p class="card-text">Building scalable APIs and server applications with Laravel, Node.js, and modern cloud architectures.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card border-0">
-                    <div class="card-body text-center">
-                        <i class="fas fa-rocket" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                        <h5 class="card-title">Optimization</h5>
-                        <p class="card-text">Ensuring fast performance and excellent user experience across all devices.</p>
+                <div class="card">
+                    <div class="card-body text-center" style="padding: 2rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem; animation: slideInLeft 1s ease-out;">
+                            <i class="fas fa-rocket" style="background: linear-gradient(135deg, var(--accent-color), var(--primary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                        </div>
+                        <h5 class="card-title">DevOps & Deployment</h5>
+                        <p class="card-text">Deploying applications to Railway, Vercel, and cloud platforms with CI/CD pipelines and monitoring.</p>
                     </div>
                 </div>
             </div>

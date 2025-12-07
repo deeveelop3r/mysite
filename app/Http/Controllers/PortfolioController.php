@@ -67,6 +67,16 @@ class PortfolioController extends Controller
         return redirect()->back()->with('success', 'Thank you for your message! I will get back to you soon.');
     }
 
+    public function skills()
+    {
+        return view('portfolio.skills');
+    }
+
+    public function apiDocs()
+    {
+        return view('portfolio.api-docs');
+    }
+
     private function rateLimit(Request $request)
     {
         $key = 'contact_form_' . $request->ip();
