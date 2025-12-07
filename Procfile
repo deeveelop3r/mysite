@@ -1,2 +1,2 @@
-web: php -S 0.0.0.0:${PORT:-8080} -t public
-release: php artisan migrate --force || true
+web: php artisan serve --host=0.0.0.0 --port=${PORT:-8080}
+release: chmod -R 777 storage bootstrap/cache && php artisan config:cache && php artisan route:cache || true
